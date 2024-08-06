@@ -1,0 +1,63 @@
+[
+  {
+    "function": "minecraft:set_attributes",
+    "modifiers": [
+      {
+        "id": "armor",
+        "attribute": "minecraft:generic.armor",
+        "amount": {
+          "type": "minecraft:score",
+          "target": {
+            "type": "minecraft:fixed",
+            "name": "%xpc.armor"
+          },
+          "score": "xpc_dummy",
+          "scale": 0.001
+        },
+        "operation": "add_value",
+        "slot": "head"
+      }
+    ]
+  },
+  {
+    "function": "minecraft:set_lore",
+    "entity": "this",
+    "lore": [
+      {
+        "text": " "
+      },
+      {
+        "text": "When on Head:",
+        "color": "gray",
+        "italic": false
+      },
+      [
+        {
+          "text": "+",
+          "color": "blue",
+          "italic": false
+        },
+        {
+          "score": {
+            "name": "%xpc.armor.lore",
+            "objective": "xpc_dummy"
+          },
+          "color": "blue",
+          "italic": false
+        },
+        {
+          "text": " Armor",
+          "color": "blue",
+          "italic": false
+        }
+      ]
+    ],
+    "mode": "replace_all"
+  },
+  {
+    "function": "minecraft:toggle_tooltips",
+    "toggles": {
+      "minecraft:attribute_modifiers": false
+    }
+  }
+]

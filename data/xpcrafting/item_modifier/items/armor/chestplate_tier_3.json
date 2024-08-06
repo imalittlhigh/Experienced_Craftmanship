@@ -1,0 +1,133 @@
+[
+  {
+    "function": "minecraft:set_attributes",
+    "modifiers": [
+      {
+        "id": "armor",
+        "attribute": "minecraft:generic.armor",
+        "amount": {
+          "type": "minecraft:score",
+          "target": {
+            "type": "minecraft:fixed",
+            "name": "%xpc.armor"
+          },
+          "score": "xpc_dummy",
+          "scale": 0.001
+        },
+        "operation": "add_value",
+        "slot": "chest"
+      },
+      {
+        "id": "toughness",
+        "attribute": "minecraft:generic.armor_toughness",
+        "amount": {
+          "type": "minecraft:score",
+          "target": {
+            "type": "minecraft:fixed",
+            "name": "%xpc.armor_toughness"
+          },
+          "score": "xpc_dummy",
+          "scale": 0.001
+        },
+        "operation": "add_value",
+        "slot": "chest"
+      },
+      {
+        "id": "toughness",
+        "attribute": "minecraft:generic.knockback_resistance",
+        "amount": {
+          "type": "minecraft:score",
+          "target": {
+            "type": "minecraft:fixed",
+            "name": "%xpc.knockback_resistance"
+          },
+          "score": "xpc_dummy",
+          "scale": 0.001
+        },
+        "operation": "add_value",
+        "slot": "chest"
+      }
+    ]
+  },
+  {
+    "function": "minecraft:set_lore",
+    "entity": "this",
+    "lore": [
+      {
+        "text": " "
+      },
+      {
+        "text": "When on Body:",
+        "color": "gray",
+        "italic": false
+      },
+      [
+        {
+          "text": "+",
+          "color": "blue",
+          "italic": false
+        },
+        {
+          "score": {
+            "name": "%xpc.armor.lore",
+            "objective": "xpc_dummy"
+          },
+          "color": "blue",
+          "italic": false
+        },
+        {
+          "text": " Armor",
+          "color": "blue",
+          "italic": false
+        }
+      ],
+      [
+        {
+          "text": "+",
+          "color": "blue",
+          "italic": false
+        },
+        {
+          "score": {
+            "name": "%xpc.armor_toughness.lore",
+            "objective": "xpc_dummy"
+          },
+          "color": "blue",
+          "italic": false
+        },
+        {
+          "text": " Armor Toughness",
+          "color": "blue",
+          "italic": false
+        }
+      ],
+      [
+        {
+          "text": "+",
+          "color": "blue",
+          "italic": false
+        },
+        {
+          "score": {
+            "name": "%xpc.knockback_resistance.lore",
+            "objective": "xpc_dummy"
+          },
+          "color": "blue",
+          "italic": false
+        },
+        {
+          "text": " Knockback Resistance",
+          "color": "blue",
+          "italic": false
+        }
+      ]
+    ],
+    "mode": "replace_all"
+  },
+  {
+    "function": "minecraft:toggle_tooltips",
+    "toggles": {
+      "minecraft:attribute_modifiers": false
+    }
+  }
+]

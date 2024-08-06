@@ -1,0 +1,23 @@
+{
+    "display": {
+        "title": {
+            "text": "Experienced Craftmanship"
+        },
+        "description": {
+            "text": "https://www.planetminecraft.com/data-pack/experienced-craftmanship"
+        },
+        "icon": {
+            "id": "minecraft:anvil"
+        },
+        "frame": "task",
+        "show_toast": false,
+        "announce_to_chat": false,
+        "hidden": false
+    },
+    "criteria": {
+        "1": {
+            "trigger": "minecraft:tick"
+        }
+    },
+    "parent": "imalittlhigh:root"
+}

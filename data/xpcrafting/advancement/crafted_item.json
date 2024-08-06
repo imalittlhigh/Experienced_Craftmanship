@@ -1,0 +1,21 @@
+{
+    "criteria": {
+      "requirement": {
+        "trigger": "minecraft:inventory_changed",
+        "conditions": {
+          "player": [],
+          "items": [
+            {
+              "components": {
+                "minecraft:custom_data": "{xpc_crafted:1b}"
+              }
+            }
+          ]
+        }
+      }
+    },
+    "rewards": {
+      "function": "xpcrafting:items/crafted"
+    }
+  }
+  
